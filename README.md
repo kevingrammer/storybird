@@ -8,7 +8,9 @@ A storyboard app
 
 Install ionic, etc. and then run:
 
-**ios**
-> ionic platform add ios
-> ionic build ios
-> ionic emulate ios
+### ios
+
+    $ ionic platform add ios
+    $ ionic build ios
+    $ ionic emulate ios
+
