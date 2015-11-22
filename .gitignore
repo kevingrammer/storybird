@@ -1,9 +1,17 @@
 # Specifies intentionally untracked files to ignore when using Git
 # http://git-scm.com/docs/gitignore
 
+# npm & bower
 node_modules/
 www/lib/angular-animate/
 www/lib/angular-sanitize/
 www/lib/angular-ui-router/
 www/lib/angular/
+
+# built css
 www/css/
+
+# ionic platform folders
+platforms/
+plugins/
+resources/
