@@ -1,6 +1,9 @@
 angular.module('app.routes', [])
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $compileProvider) {
+
+  // Whitelist the camera img routes
+  $compileProvider.imgSrcSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|tel):/);
 
   // Routes
   $stateProvider

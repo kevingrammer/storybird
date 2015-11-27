@@ -1,20 +1,25 @@
 <!-- empty egg panel -->
 <div class="list card">
   <div class="item item-divider">
-    {{eggTitle}}
+    <div class="egg-title">{{eggTitle}}</div>
   </div>
   <div class="item item-body">
     <div style="line-height: 250px; border: 1px solid rgb(238, 238, 238); border-radius: 3px; text-align: center; width: 100%; height: auto; background-color: rgb(255, 255, 255);">
-      <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>
+      <i class="icon ion-image"
+          style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;">
+      </i>
     </div>
     <form class="list">
       <label class="item item-input" name="eggText">
-        <span class="input-label">
+        <span class="input-label"></span>
+        <textarea placeholder="enter egg text">
           {{eggContent}}
-        </span>
-        <textarea placeholder="enter egg text"> </textarea>
+        </textarea>
       </label>
     </form>
   </div>
   <div class="item item-divider">1 of 1</div>
 </div>
+<button class="button" ng-click="getPhoto()">
+  Take Photo
+</button>

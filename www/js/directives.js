@@ -1,5 +1,6 @@
 angular.module('app.directives', [])
-  .directive('sbEgg', function() {
+
+  .directive('sbEgg', ['Camera', function(Camera) {
     return {
       templateUrl: 'templates/sb-egg.html',
       restrict: 'AE',
@@ -8,8 +9,18 @@ angular.module('app.directives', [])
         eggTitle: '=sbEggTitle',
         eggContent: '=sbEggContent'
       },
-      link: function postLink(scope, element, attrs) {
+      link: function(scope, element, attrs) {
+
+        scope.getPhoto = function() {
+          Camera.getPicture().then(function(imageURI) {
+            console.log(imageURI);
+          }, function(err) {
+            console.err(err);
+          });
+        };
+
       }
     }
-  })
+  }])
+
   ;
