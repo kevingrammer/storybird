@@ -1,5 +1,12 @@
 # node-js-getting-started
 
+## Fire it up
+
+run `heroku local` from root
+run `yarn start` from `client/`
+
+----
+
 A barebones Node.js app using [Express 4](http://expressjs.com/).
 
 This application supports the [Getting Started on Heroku with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
