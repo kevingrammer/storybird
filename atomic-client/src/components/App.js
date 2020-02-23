@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Switch, Route } from 'react-router-dom'
 import { injectGlobal, ThemeProvider } from 'styled-components'
 
@@ -14,23 +13,14 @@ injectGlobal`
   }
 `
 
-const App = ({ data }) => {
+const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <Switch>
         <Route path="/" component={HomePage} exact />
-        {data}
       </Switch>
     </ThemeProvider>
   )
-}
-
-App.propTypes = {
-  data: PropTypes.node,
-}
-
-App.defaultProps = {
-  data: null,
 }
 
 export default App

@@ -45,3 +45,10 @@ For more information about using Node.js on Heroku, see these Dev Center article
 - [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
 - [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
 - [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
+
+## Terminology
+
+Flock - a user's combined nests, birds and eggs
+Nest - a grouping of storyboards, whether multiple scenes or multiple books
+Bird - a storyboard (for a scene or a whole feature)
+Egg - a storyboard cell.  Put them together to make a storyboard

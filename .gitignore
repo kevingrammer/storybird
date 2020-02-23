@@ -15,3 +15,6 @@ www/css/
 platforms/
 plugins/
 resources/
+
+# mac
+.DS_Store

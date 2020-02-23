@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './storybird-logo-v0.0.1.png';
 import './App.css';
 
 class App extends Component {
-state = {
+  state = {
     data: null
   };
 
@@ -25,14 +25,18 @@ state = {
   };
 
   render() {
+    const { data } = this.state;
+    console.info({ data });
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+      <div className="app">
+        <header className="app-header">
+          <h1 className="app-title">Storybird</h1>
+          <button className="app-logo-button" onClick={() => alert('yo')}>
+            <img src={logo} alt="logo" />
+          </button>
         </header>
         {/* Render the newly fetched data inside of this.state.data */}
-        <p className="App-intro">{this.state.data}</p>
+        <p className="app-intro">{data}</p>
       </div>
     );
   }
